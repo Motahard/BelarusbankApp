@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background: #157f4c;
+  color: #fff;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1rem;
+}
+
+.container .form {
+  padding: 2rem 1rem;
+  max-height: 237px;
+  display: flex;
+  background: #f4f4f4;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px #a7a7a7;
+}
+
+.container .form form .checkboxes {
+  display: flex;
+}
+
+.container .form form .checkboxes div > input {
+  margin-right: 0.3rem;
+}
+
+.container .form form .checkboxes > div {
+  margin-right: 1rem;
+}
+
+.container .form form .checkboxes > div:last-child {
+  margin-right: 0;
+}
+
+.container .form form input[type='text'],
+.container .form form input[type='submit'] {
+  display: block;
+  margin: 1rem 0rem;
+  width: 100%;
+}
+
+.container .form form input[type='text'] {
+  padding: 0.4rem;
+  border: none;
+  box-shadow: 0 0 10px #d5d3d3;
+  border-radius: 5px;
+}
+
+.container .form form input[type='submit'] {
+  color: #fff;
+  background: #157f4c;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.bank-item {
+  border-radius: 10px;
+  text-align: center;
+  border: 5px solid #157f4c;
+  margin-bottom: 2rem;
+}
+
+.bank-item > p:last-child {
+  margin-bottom: 1rem;
+}
+
+.bank-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-bottom: 5px solid #157f4c;
+}
+
+.bank-card-solo {
+  display: grid;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 5px solid #157f4c;
+}
+
+.bank-card > div {
+  border-right: 5px solid #157f4c;
+}
+
+.bank-card h4 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ebebeb;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #157f4c;
+}
+
+.bank-card p {
+  padding: 0.5rem;
+  border-bottom: 2px solid #157f4c;
+}
+.bank-card p:last-child {
+  border: none;
+}
+
+.bank-card > div:last-child {
+  border-right: none;
+}
+
+.bank-card:first-child,
+.bank-card-solo:first-child {
+  text-align: start;
+  justify-self: flex-start;
+}
+
+.select {
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.form-h4 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.form-calculator {
+  max-width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.form-calculator input {
+  display: inline-block;
+  margin: 0.4rem 0;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .container > div:first-child {
+    margin-bottom: 1rem;
+  }
+}
